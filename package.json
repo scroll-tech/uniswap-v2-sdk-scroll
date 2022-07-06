@@ -1,7 +1,7 @@
 {
   "name": "v2-sdk-fork",
   "license": "MIT",
-  "version": "3.0.6",
+  "version": "3.10.2",
   "description": "🛠 An SDK for building applications on top of Uniswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
