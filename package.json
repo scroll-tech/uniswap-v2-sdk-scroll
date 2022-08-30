@@ -1,14 +1,14 @@
 {
-  "name": "v2-sdk-fork",
+  "name": "uniswap-v2-sdk-scroll",
   "license": "MIT",
-  "version": "3.10.3",
+  "version": "3.10.4",
   "description": "🛠 An SDK for building applications on top of Uniswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/scroll-tech/v2-sdk-fork.git",
+  "repository": "https://github.com/otrsk/uniswap-v2-sdk-scroll.git",
   "keywords": [
     "uniswap",
     "ethereum"
