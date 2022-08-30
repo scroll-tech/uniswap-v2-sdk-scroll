@@ -20,7 +20,7 @@ var ChainId
   ChainId[(ChainId['RINKEBY'] = 4)] = 'RINKEBY'
   ChainId[(ChainId['G\xD6RLI'] = 5)] = 'G\xD6RLI'
   ChainId[(ChainId['KOVAN'] = 42)] = 'KOVAN'
-  ChainId[(ChainId['TEST'] = 534353)] = 'TEST'
+  ChainId[(ChainId['TEST'] = 534354)] = 'TEST'
 })(ChainId || (ChainId = {}))
 
 var TradeType
