@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/Uniswap/uniswap-sdk.git",
+  "repository": "https://github.com/scroll-tech/v2-sdk-fork.git",
   "keywords": [
     "uniswap",
     "ethereum"
