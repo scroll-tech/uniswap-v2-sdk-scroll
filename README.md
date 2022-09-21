@@ -1,6 +1,6 @@
 # UNISWAP-V2-SDK-SCROLL
 
-## Update sdk
+## Scroll's changes to the forked SDK
 
 ```sh
 vi dist/sdk.esm.js
