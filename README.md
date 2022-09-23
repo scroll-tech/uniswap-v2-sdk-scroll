@@ -5,7 +5,7 @@
 ```sh
 vi dist/sdk.esm.js
 
-Line 23(chainId) / 39(FACTORY_ADDRESS) / 40(INIT_CODE_HASH) / 532(WETH ADDRESS)
+Line 23(chainId) / 39(FACTORY_ADDRESS) / 40(INIT_CODE_HASH) / 532(WETH ADDRESS) / ETH -> TSETH
 ```
 
 ```sh
@@ -18,4 +18,10 @@ Line 33(chainId)
 vi dist/constants.d.ts
 
 Line 9(chainId)
+```
+
+```sh
+vi dist/sdk.cjs.development.js
+
+Line 375 (ETH->TSETH)
 ```

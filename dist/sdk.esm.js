@@ -418,7 +418,7 @@ var Currency =
  * The only instance of the base class `Currency`.
  */
 
-Currency.ETHER = /*#__PURE__*/ new Currency(18, 'ETH', 'Ether')
+Currency.ETHER = /*#__PURE__*/ new Currency(18, 'TSETH', 'Ether')
 var ETHER = Currency.ETHER
 
 var _WETH
