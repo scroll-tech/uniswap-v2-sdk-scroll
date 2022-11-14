@@ -20,7 +20,7 @@ var ChainId
   ChainId[(ChainId['RINKEBY'] = 4)] = 'RINKEBY'
   ChainId[(ChainId['G\xD6RLI'] = 5)] = 'G\xD6RLI'
   ChainId[(ChainId['KOVAN'] = 42)] = 'KOVAN'
-  ChainId[(ChainId['TEST'] = 5343541)] = 'TEST' // 5343541 for STAGING, 534354 for MAIN
+  ChainId[(ChainId['TEST'] = +process.env.REACT_APP_CHAIN_ID_L2)] = 'TEST' // 5343541 for STAGING, 534354 for MAIN
 })(ChainId || (ChainId = {}))
 
 var TradeType
@@ -529,7 +529,7 @@ var WETH =
   )),
   (_WETH[ChainId.TEST] = /*#__PURE__*/ new Token(
     ChainId.TEST,
-    '0x05fDbDfaE180345C6Cff5316c286727CF1a43327',
+    process.env.REACT_APP_L2_WETH_ADDRESS,
     18,
     'WETH',
     'Wrapped Ether'
