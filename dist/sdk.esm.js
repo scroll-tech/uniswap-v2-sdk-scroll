@@ -36,7 +36,7 @@ var Rounding
   Rounding[(Rounding['ROUND_UP'] = 2)] = 'ROUND_UP'
 })(Rounding || (Rounding = {}))
 
-var FACTORY_ADDRESS = +process.env.REACT_APP_UNIV2_FACTORY_ADDR
+var FACTORY_ADDRESS = process.env.REACT_APP_UNIV2_FACTORY_ADDR
 var INIT_CODE_HASH = '0xeaa641206730108a5d03240c05597d08a25dff704ff8d9ed22f55c0229a29695'
 var MINIMUM_LIQUIDITY = /*#__PURE__*/ JSBI.BigInt(1000) // exports for internal consumption
 
