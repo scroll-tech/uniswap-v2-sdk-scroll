@@ -20,7 +20,7 @@ var ChainId
   ChainId[(ChainId['RINKEBY'] = 4)] = 'RINKEBY'
   ChainId[(ChainId['G\xD6RLI'] = 5)] = 'G\xD6RLI'
   ChainId[(ChainId['KOVAN'] = 42)] = 'KOVAN'
-  ChainId[(ChainId['TEST'] = 534354)] = 'TEST' // 5343541 for STAGING, 534354 for MAIN
+  ChainId[(ChainId['TEST'] = +process.env.REACT_APP_CHAIN_ID_L2)] = 'TEST' // 5343541 for STAGING, 534354 for MAIN
 })(ChainId || (ChainId = {}))
 
 var TradeType
@@ -36,7 +36,7 @@ var Rounding
   Rounding[(Rounding['ROUND_UP'] = 2)] = 'ROUND_UP'
 })(Rounding || (Rounding = {}))
 
-var FACTORY_ADDRESS = '0x33B5DDf9b5e82Bb958EB885F5F241E783A113f18'
+var FACTORY_ADDRESS = '0x182c2e52Abb587229307e35a639ad479c58259C7'
 var INIT_CODE_HASH = '0xeaa641206730108a5d03240c05597d08a25dff704ff8d9ed22f55c0229a29695'
 var MINIMUM_LIQUIDITY = /*#__PURE__*/ JSBI.BigInt(1000) // exports for internal consumption
 
@@ -529,7 +529,7 @@ var WETH =
   )),
   (_WETH[ChainId.TEST] = /*#__PURE__*/ new Token(
     ChainId.TEST,
-    '0x05fDbDfaE180345C6Cff5316c286727CF1a43327',
+    process.env.REACT_APP_L2_WETH_ADDRESS,
     18,
     'WETH',
     'Wrapped Ether'
